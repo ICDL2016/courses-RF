@@ -1,0 +1,170 @@
+extends layouts/layout_course
+block content
+    .container
+        .courses
+            .courses__left
+                .courses-form
+                    img.courses-form__img(src="assets/i/example.jpg")
+                    form.price-study
+
+                        .price-study__plan.price-study__plan--selected
+                            input.price-study__check(type="radio" name="study" id="remotely" value="remotely" checked)
+                            label(for="remotely")
+                                .price-study__info
+                                    .price-study__name Дистанционно
+                                    .price-study__price
+                                        span.price-study__price.price-study__price--old 119000 &nbsp;
+                                            i.fa.fa-rub(aria-hidden="true") &nbsp;
+                                        span.price-study__price.price-study__price--new 59500 &nbsp;
+                                            i.fa.fa-rub(aria-hidden="true") &nbsp;
+                                    .price-study__time 350 ч
+
+                        .price-study__plan
+                            input.price-study__check(type="radio" name="study" id="internally" value="internally")
+                            label(for="internally")
+                                .price-study__info
+                                    .price-study__name Очно + Д
+                                    .price-study__price
+                                        span.price-study__price.price-study__price--old 119000 &nbsp;
+                                            i.fa.fa-rub(aria-hidden="true") &nbsp;
+                                        span.price-study__price.price-study__price--new 59500 &nbsp;
+                                            i.fa.fa-rub(aria-hidden="true") &nbsp;
+                                    .price-study__time +40 ч
+
+                        .price-study__plan
+                            input.price-study__check(type="radio" name="study" id="individually" value="individually")
+                            label(for="individually")
+                                .price-study__info
+                                    .price-study__name Индивидуально + Д
+                                    .price-study__price
+                                        span.price-study__price.price-study__price--old 119000 &nbsp;
+                                            i.fa.fa-rub(aria-hidden="true") &nbsp;
+                                        span.price-study__price.price-study__price--new 59500 &nbsp;
+                                            i.fa.fa-rub(aria-hidden="true") &nbsp;
+                                    .price-study__time +40 ч
+
+
+                        .price-study__item
+                            input.price-study__text(type="text" placeholder="Имя")
+                        .price-study__item
+                            input.price-study__text(type="text" placeholder="E-mail")
+                        .price-study__item
+                            input.price-study__text(type="text" placeholder="Телефон")
+                        .price-study__item.price-study__item--text
+                            textarea.price-study__text(type="text" placeholder="Комментарий" rows="2")
+                        button.price-study__btn(type="submit") Подать заявку
+            .courses__right
+                div.text-justify
+                    p
+                        | Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и
+                        | маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.
+                        | А внизу текста фото галерея курсов, дипломов, лицензий и пр. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.
+                .popular-people
+                    .popular-people__item
+                        a.popular-people__img.fancybox(href="assets/i/example.jpg", rel="contacts", style="background-image:url('assets/i/example.jpg')")
+                    .popular-people__item
+                        a.popular-people__img.fancybox(href="assets/i/example.jpg", rel="contacts", style="background-image:url('assets/i/example.jpg')")
+                    .popular-people__item
+                        a.popular-people__img.fancybox(href="assets/i/example.jpg", rel="contacts", style="background-image:url('assets/i/example.jpg')")
+                    .popular-people__item
+                        a.popular-people__img.fancybox(href="assets/i/example.jpg", rel="contacts", style="background-image:url('assets/i/example.jpg')")
+
+                .text-justify
+                    p
+                        | Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и
+                        | маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.
+
+                .popular-people.popular-people--large
+                    .popular-people__item
+                        a.popular-people__img.fancybox(href="assets/i/example.jpg", rel="contacts", style="background-image:url('assets/i/example.jpg')")
+                    .popular-people__item
+                        a.popular-people__img.fancybox(href="assets/i/example.jpg", rel="contacts", style="background-image:url('assets/i/example.jpg')")
+                    .popular-people__item
+                        a.popular-people__img.fancybox(href="assets/i/example.jpg", rel="contacts", style="background-image:url('assets/i/example.jpg')")
+                    .popular-people__item
+                        a.popular-people__img.fancybox(href="assets/i/example.jpg", rel="contacts", style="background-image:url('assets/i/example.jpg')")
+
+                .text-justify
+                    p
+                        | Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и
+                        | маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.
+
+
+                .popular-people.popular-people--xlarge
+                    .popular-people__item
+                        a.popular-people__img.fancybox(href="assets/i/example.jpg", rel="contacts", style="background-image:url('assets/i/example.jpg')")
+                    .popular-people__item
+                        a.popular-people__img.fancybox(href="assets/i/example.jpg", rel="contacts", style="background-image:url('assets/i/example.jpg')")
+                    .popular-people__item
+                        a.popular-people__img.fancybox(href="assets/i/example.jpg", rel="contacts", style="background-image:url('assets/i/example.jpg')")
+                    .popular-people__item
+                        a.popular-people__img.fancybox(href="assets/i/example.jpg", rel="contacts", style="background-image:url('assets/i/example.jpg')")
+
+    .helpers
+        a.helpers__item(href="")
+            .helpers__img
+                .fa.fa-university
+            .helpers__title Главная
+        a.helpers__item(href="")
+            .helpers__img
+                .fa.fa-briefcase
+            .helpers__title О курсах
+        a.helpers__item(href="")
+            .helpers__img
+                .fa.fa-graduation-cap
+            .helpers__title Как учиться
+        a.helpers__item(href="")
+            .helpers__img
+                .fa.fa-envelope
+            .helpers__title Контакты
+    p.text-center Другие курсы по ресторанному бизнесу
+    .container
+        .courses-list
+            .courses-list__item
+                a.courses-list__link(href="#")
+                    img.courses-list__img(src="assets/i/example.jpg")
+                .courses-list__price.course-price
+                    .course-price__old 25000 <i class="fa fa-rub"></i>
+                    .course-price__current 12500 <i class="fa fa-rub"></i>
+                .courses-list__title Ресторатор
+                .courses-list__description Полный курс обучения ресторанному бизнесу
+            .courses-list__item
+                a.courses-list__link(href="#")
+                    img.courses-list__img(src="assets/i/example.jpg")
+                .courses-list__price.course-price
+                    .course-price__old 25000 <i class="fa fa-rub"></i>
+                    .course-price__current 12500 <i class="fa fa-rub"></i>
+                .courses-list__title Директор ресторана
+                .courses-list__description Курс обучения управлению ресторанным бизнесом
+            .courses-list__item
+                a.courses-list__link(href="#")
+                    img.courses-list__img(src="assets/i/example.jpg")
+                .courses-list__price.course-price
+                    .course-price__old 25000 <i class="fa fa-rub"></i>
+                    .course-price__current 12500 <i class="fa fa-rub"></i>
+                .courses-list__title Менеджер ресторана
+                .courses-list__description Курс обучения управлению персоналом и продажами ресторана
+            .courses-list__item
+                a.courses-list__link(href="#")
+                    img.courses-list__img(src="assets/i/example.jpg")
+                .courses-list__price.course-price
+                    .course-price__old 25000 <i class="fa fa-rub"></i>
+                    .course-price__current 12500 <i class="fa fa-rub"></i>
+                .courses-list__title Ресторатор
+                .courses-list__description Полный курс обучения ресторанному бизнесу
+            .courses-list__item
+                a.courses-list__link(href="#")
+                    img.courses-list__img(src="assets/i/example.jpg")
+                .courses-list__price.course-price
+                    .course-price__old 25000 <i class="fa fa-rub"></i>
+                    .course-price__current 12500 <i class="fa fa-rub"></i>
+                .courses-list__title Директор ресторана
+                .courses-list__description Курс обучения управлению ресторанным бизнесом
+            .courses-list__item
+                a.courses-list__link(href="#")
+                    img.courses-list__img(src="assets/i/example.jpg")
+                .courses-list__price.course-price
+                    .course-price__old 25000 <i class="fa fa-rub"></i>
+                    .course-price__current 12500 <i class="fa fa-rub"></i>
+                .courses-list__title Менеджер ресторана
+                .courses-list__description Курс обучения управлению персоналом и продажами ресторана

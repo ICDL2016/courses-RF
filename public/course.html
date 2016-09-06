@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="assets/css/styles.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/i/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/i/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/i/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/i/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/i/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/i/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/i/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/i/favicon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="assets/i/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/i/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/i/favicon/favicon-16x16.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#008000">
+    <meta name="msapplication-TileImage" content="assets/i/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#008000">
+    <!--if lt IE 9script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
+    -->
+    <!--if lt IE 9
+    script(src='//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js')
+    script(src='//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js')
+    script(src='//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')
+    -->
+    <title>gulpApp</title>
+  </head>
+  <body>
+    <header class="header"><a href="" class="header__logo"><img src="assets/i/logo-green.svg"></a>
+      <div class="header__text">РЕСТОРАТОР</div>
+      <div class="header__sub-text">Полный курс обучения ресторанному бизнесу</div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="courses">
+          <div class="courses__left">
+            <div class="courses-form"><img src="assets/i/example.jpg" class="courses-form__img">
+              <form class="price-study">
+                <div class="price-study__plan price-study__plan--selected">
+                  <input type="radio" name="study" id="remotely" value="remotely" checked class="price-study__check">
+                  <label for="remotely">
+                    <div class="price-study__info">
+                      <div class="price-study__name">Дистанционно</div>
+                      <div class="price-study__price"><span class="price-study__price price-study__price--old">119000 &nbsp;<i aria-hidden="true" class="fa fa-rub">&nbsp;</i></span><span class="price-study__price price-study__price--new">59500 &nbsp;<i aria-hidden="true" class="fa fa-rub">&nbsp;</i></span></div>
+                      <div class="price-study__time">350 ч</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="price-study__plan">
+                  <input type="radio" name="study" id="internally" value="internally" class="price-study__check">
+                  <label for="internally">
+                    <div class="price-study__info">
+                      <div class="price-study__name">Очно + Д</div>
+                      <div class="price-study__price"><span class="price-study__price price-study__price--old">119000 &nbsp;<i aria-hidden="true" class="fa fa-rub">&nbsp;</i></span><span class="price-study__price price-study__price--new">59500 &nbsp;<i aria-hidden="true" class="fa fa-rub">&nbsp;</i></span></div>
+                      <div class="price-study__time">+40 ч</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="price-study__plan">
+                  <input type="radio" name="study" id="individually" value="individually" class="price-study__check">
+                  <label for="individually">
+                    <div class="price-study__info">
+                      <div class="price-study__name">Индивидуально + Д</div>
+                      <div class="price-study__price"><span class="price-study__price price-study__price--old">119000 &nbsp;<i aria-hidden="true" class="fa fa-rub">&nbsp;</i></span><span class="price-study__price price-study__price--new">59500 &nbsp;<i aria-hidden="true" class="fa fa-rub">&nbsp;</i></span></div>
+                      <div class="price-study__time">+40 ч</div>
+                    </div>
+                  </label>
+                </div>
+                <div class="price-study__item">
+                  <input type="text" placeholder="Имя" class="price-study__text">
+                </div>
+                <div class="price-study__item">
+                  <input type="text" placeholder="E-mail" class="price-study__text">
+                </div>
+                <div class="price-study__item">
+                  <input type="text" placeholder="Телефон" class="price-study__text">
+                </div>
+                <div class="price-study__item price-study__item--text">
+                  <textarea type="text" placeholder="Комментарий" rows="2" class="price-study__text"></textarea>
+                </div>
+                <button type="submit" class="price-study__btn">Подать заявку</button>
+              </form>
+            </div>
+          </div>
+          <div class="courses__right">
+            <div class="text-justify">
+              <p>
+                Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и
+                маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.
+                А внизу текста фото галерея курсов, дипломов, лицензий и пр. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.
+              </p>
+            </div>
+            <div class="popular-people">
+              <div class="popular-people__item"><a href="assets/i/example.jpg" rel="contacts" style="background-image:url('assets/i/example.jpg')" class="popular-people__img fancybox"></a></div>
+              <div class="popular-people__item"><a href="assets/i/example.jpg" rel="contacts" style="background-image:url('assets/i/example.jpg')" class="popular-people__img fancybox"></a></div>
+              <div class="popular-people__item"><a href="assets/i/example.jpg" rel="contacts" style="background-image:url('assets/i/example.jpg')" class="popular-people__img fancybox"></a></div>
+              <div class="popular-people__item"><a href="assets/i/example.jpg" rel="contacts" style="background-image:url('assets/i/example.jpg')" class="popular-people__img fancybox"></a></div>
+            </div>
+            <div class="text-justify">
+              <p>
+                Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и
+                маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.
+              </p>
+            </div>
+            <div class="popular-people popular-people--large">
+              <div class="popular-people__item"><a href="assets/i/example.jpg" rel="contacts" style="background-image:url('assets/i/example.jpg')" class="popular-people__img fancybox"></a></div>
+              <div class="popular-people__item"><a href="assets/i/example.jpg" rel="contacts" style="background-image:url('assets/i/example.jpg')" class="popular-people__img fancybox"></a></div>
+              <div class="popular-people__item"><a href="assets/i/example.jpg" rel="contacts" style="background-image:url('assets/i/example.jpg')" class="popular-people__img fancybox"></a></div>
+              <div class="popular-people__item"><a href="assets/i/example.jpg" rel="contacts" style="background-image:url('assets/i/example.jpg')" class="popular-people__img fancybox"></a></div>
+            </div>
+            <div class="text-justify">
+              <p>
+                Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе. Общий текст описания курсов. Курс обучения по рекламе и
+                маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.Общий текст описания курсов. Курс обучения по рекламе и маркетингу в ресторанном бизнесе.
+              </p>
+            </div>
+            <div class="popular-people popular-people--xlarge">
+              <div class="popular-people__item"><a href="assets/i/example.jpg" rel="contacts" style="background-image:url('assets/i/example.jpg')" class="popular-people__img fancybox"></a></div>
+              <div class="popular-people__item"><a href="assets/i/example.jpg" rel="contacts" style="background-image:url('assets/i/example.jpg')" class="popular-people__img fancybox"></a></div>
+              <div class="popular-people__item"><a href="assets/i/example.jpg" rel="contacts" style="background-image:url('assets/i/example.jpg')" class="popular-people__img fancybox"></a></div>
+              <div class="popular-people__item"><a href="assets/i/example.jpg" rel="contacts" style="background-image:url('assets/i/example.jpg')" class="popular-people__img fancybox"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="helpers"><a href="" class="helpers__item">
+          <div class="helpers__img">
+            <div class="fa fa-university"></div>
+          </div>
+          <div class="helpers__title">Главная</div></a><a href="" class="helpers__item">
+          <div class="helpers__img">
+            <div class="fa fa-briefcase"></div>
+          </div>
+          <div class="helpers__title">О курсах</div></a><a href="" class="helpers__item">
+          <div class="helpers__img">
+            <div class="fa fa-graduation-cap"></div>
+          </div>
+          <div class="helpers__title">Как учиться</div></a><a href="" class="helpers__item">
+          <div class="helpers__img">
+            <div class="fa fa-envelope"></div>
+          </div>
+          <div class="helpers__title">Контакты</div></a></div>
+      <p class="text-center">Другие курсы по ресторанному бизнесу</p>
+      <div class="container">
+        <div class="courses-list">
+          <div class="courses-list__item"><a href="#" class="courses-list__link"><img src="assets/i/example.jpg" class="courses-list__img"></a>
+            <div class="courses-list__price course-price">
+              <div class="course-price__old">25000 <i class="fa fa-rub"></i></div>
+              <div class="course-price__current">12500 <i class="fa fa-rub"></i></div>
+            </div>
+            <div class="courses-list__title">Ресторатор</div>
+            <div class="courses-list__description">Полный курс обучения ресторанному бизнесу</div>
+          </div>
+          <div class="courses-list__item"><a href="#" class="courses-list__link"><img src="assets/i/example.jpg" class="courses-list__img"></a>
+            <div class="courses-list__price course-price">
+              <div class="course-price__old">25000 <i class="fa fa-rub"></i></div>
+              <div class="course-price__current">12500 <i class="fa fa-rub"></i></div>
+            </div>
+            <div class="courses-list__title">Директор ресторана</div>
+            <div class="courses-list__description">Курс обучения управлению ресторанным бизнесом</div>
+          </div>
+          <div class="courses-list__item"><a href="#" class="courses-list__link"><img src="assets/i/example.jpg" class="courses-list__img"></a>
+            <div class="courses-list__price course-price">
+              <div class="course-price__old">25000 <i class="fa fa-rub"></i></div>
+              <div class="course-price__current">12500 <i class="fa fa-rub"></i></div>
+            </div>
+            <div class="courses-list__title">Менеджер ресторана</div>
+            <div class="courses-list__description">Курс обучения управлению персоналом и продажами ресторана</div>
+          </div>
+          <div class="courses-list__item"><a href="#" class="courses-list__link"><img src="assets/i/example.jpg" class="courses-list__img"></a>
+            <div class="courses-list__price course-price">
+              <div class="course-price__old">25000 <i class="fa fa-rub"></i></div>
+              <div class="course-price__current">12500 <i class="fa fa-rub"></i></div>
+            </div>
+            <div class="courses-list__title">Ресторатор</div>
+            <div class="courses-list__description">Полный курс обучения ресторанному бизнесу</div>
+          </div>
+          <div class="courses-list__item"><a href="#" class="courses-list__link"><img src="assets/i/example.jpg" class="courses-list__img"></a>
+            <div class="courses-list__price course-price">
+              <div class="course-price__old">25000 <i class="fa fa-rub"></i></div>
+              <div class="course-price__current">12500 <i class="fa fa-rub"></i></div>
+            </div>
+            <div class="courses-list__title">Директор ресторана</div>
+            <div class="courses-list__description">Курс обучения управлению ресторанным бизнесом</div>
+          </div>
+          <div class="courses-list__item"><a href="#" class="courses-list__link"><img src="assets/i/example.jpg" class="courses-list__img"></a>
+            <div class="courses-list__price course-price">
+              <div class="course-price__old">25000 <i class="fa fa-rub"></i></div>
+              <div class="course-price__current">12500 <i class="fa fa-rub"></i></div>
+            </div>
+            <div class="courses-list__title">Менеджер ресторана</div>
+            <div class="courses-list__description">Курс обучения управлению персоналом и продажами ресторана</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <ul class="social-menu">
+        <li class="social-menu__item"><a href="#" class="social-menu__link"><i aria-hidden="true" class="social-menu__icon fa fa-facebook"></i></a></li>
+        <li class="social-menu__item"><a href="#" class="social-menu__link"><i aria-hidden="true" class="social-menu__icon fa fa-twitter"></i></a></li>
+        <li class="social-menu__item"><a href="#" class="social-menu__link"><i aria-hidden="true" class="social-menu__icon fa fa-linkedin"></i></a></li>
+        <li class="social-menu__item"><a href="#" class="social-menu__link"><i aria-hidden="true" class="social-menu__icon fa fa-vk"></i></a></li>
+        <li class="social-menu__item"><a href="#" class="social-menu__link"><i aria-hidden="true" class="social-menu__icon fa fa-odnoklassniki"></i></a></li>
+        <li class="social-menu__item"><a href="#" class="social-menu__link"><i aria-hidden="true" class="social-menu__icon fa fa-youtube"></i></a></li>
+        <li class="social-menu__item"><a href="#" class="social-menu__link"><i aria-hidden="true" class="social-menu__icon fa fa-instagram"></i></a></li>
+      </ul><a href="tel:+78000000000" class="footer__tel">Тел. +7 800 000 00 00</a><a href="" class="footer__logo"><img src="assets/i/logo-green.svg"></a>
+    </footer>
+  </body>
+  <script src="assets/js/plugins/jquery-1.9.1.min.js"></script>
+  <!--script(src="assets/js/plugins/jquery.shuffle.modernizr.min.js")-->
+  <!--script(src="assets/js/plugins/jquery.shuffle.min.js")-->
+  <script src="assets/js/plugins/masonry.pkgd.min.js"></script>
+  <script src="assets/js/plugins/jquery.fancybox.pack.js"></script>
+  <script src="assets/js/main.js"></script>
+</html>

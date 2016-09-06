@@ -1,0 +1,76 @@
+@import 'helpers/elements';
+
+@media only screen and (max-width : 768px) {
+  .courses {
+    &__left {
+      float: none;
+      margin: 0 auto 25px;
+    }
+    &__right {
+      float: none;
+      margin-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width : 579px) {
+  .managers {
+    &__item {
+      margin-bottom: 15px;
+    }
+    //&__img {
+    //  width: 95px;
+    //  height: 95px;
+    //}
+  }
+}
+
+@media only screen and (max-width : 520px) {
+  .helpers {
+    &__img {
+      margin: 0 5px;
+    }
+  }
+
+  .popular-people {
+    &__item {
+      margin: 0 auto 10px;
+      display: block;
+    }
+
+    &--xlarge {
+      .popular-people__item {
+        margin: 0 auto 10px;
+        display: block;
+      }
+    }
+
+  }
+}
+
+/* Custom 420px */
+@media only screen and (max-width : 420px) {
+  .helpers {
+    &__item {
+      display: block;
+    }
+  }
+  .managers {
+    &__title {
+      margin: 0 auto 10px;
+      max-width: 200px;
+    }
+    &__item {
+      display: block;
+    }
+    &__img {
+      margin: 0 auto;
+    }
+  }
+}
+
+
+
+
+
+

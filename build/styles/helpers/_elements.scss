@@ -1,0 +1,282 @@
+$handle: "(max-width: 1440px)";
+$handle-small: "(max-width: 1024px)";
+$handle-wide: "(max-width: 1440px)";
+$wide-min: "(min-width: 1600px)";
+$phone-small: "(max-width: 400px)";
+$phone-medium: "(max-width: 500px)";
+$phone: "(max-width : 768px)";
+
+html {
+  //min-height: 100%;
+  //position: relative;
+}
+
+body {
+  background: #fff;
+  font-family: $font-default;
+  font-size: 15px;
+  line-height: 1.33;
+  color: $text-color;
+  //margin-bottom: 171px;
+}
+
+.main {
+  padding-top: 15px;
+}
+
+.m-t-15 {
+  margin-top: 15px;
+}
+
+.container {
+  @extend %clearfix;
+  //width: 1000px;
+  //max-width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;
+  @media #{$handle-small}{
+    width: auto;
+  }
+  &_hours {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+}
+
+.container .text-justify p {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container .text-center {
+  font-size: 20px;
+}
+
+[type=submit], .btn {
+  padding: 6px 30px;
+  @extend %inline-block;
+  @extend %text-bold;
+  @extend %transition;
+  appearance: none;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: $btn-color;
+  color: #fff;
+  font-size: 18px;
+  //font-family: $font-headings;
+  line-height: 21px;
+  &:hover, &.active {
+    background: $btn-color-hover;
+    color: #fff;
+  }
+
+  &.btn-wide {
+    padding: 9px 110px;
+  }
+  &.btn-ico {
+    padding: 0;
+    background-color: transparent;
+  }
+  &.btn-lg {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  &.btn-block {
+    width: 100%;
+  }
+  &.btn-2lg {
+    padding-left: 58px;
+    padding-right: 58px;
+    &:hover {
+      padding-left: 56px;
+      padding-right: 56px;
+    }
+  }
+}
+
+input:not([type="submit"]), textarea {
+  @extend %inline-block;
+  padding: 4px 10px 2px;
+  border: 1px solid $bg-color;
+  font-size: 14px;
+  //font-family: $font-headings;
+  color: $gray;
+  @extend %transition;
+  &.error {
+    border-color: #ff0033;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $gray;
+  }
+
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    color: $gray;
+  }
+
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $gray;
+  }
+
+  &:-ms-input-placeholder {
+    color: $gray;
+  }
+
+}
+
+label.error {
+  color: #ff0033;
+  span {
+    display: block;
+  }
+  input {
+    border-color: #ff0033;
+  }
+}
+
+.select-wrap {
+  position: relative;
+  background: #ffffff;
+
+  &:after {
+    content: '\E004';
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    margin-top: -8px;
+    font-size: 10px;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 30px;
+    font-weight: normal;
+    @extend %inline-block;
+    background: transparent;
+    position: relative;
+    z-index: 99;
+    padding: 6px 15px;
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+    @extend %text-bold;
+    color: #333;
+    //font-family: $font-headings;
+    border-radius: 0;
+    &[disabled] {
+      cursor: default;
+      opacity: 0.5;
+    }
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+blockquote {
+  padding: 13px;
+  margin-bottom: 20px;
+  border-left: 3px solid #ec2224;
+  background: #f2f2f2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $text-color;
+  //font-family: $font-headings;
+  font-weight: bold;
+  a {
+    margin-left: 20px;
+    font-weight: normal;
+    @extend %text-default;
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h1 {
+  margin: 20px 0;
+  @extend .h1;
+}
+
+h2 {
+  @extend .h2;
+}
+
+h3 {
+  @extend .h3;
+}
+
+h4 {
+  @extend .h4;
+  //font-family: $font-default;
+  //font-weight: normal;
+}
+
+h2, h3 {
+  margin: 15px 0;
+}
+
+b {
+  //font-family: $font-headings;
+}
+
+a {
+  @extend %transition-link;
+  font-size: 15px;
+  text-decoration: none;
+  color: $link-color;
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.phone-hidden {
+  display: block;
+  @media #{$phone}{
+    display: none;
+  }
+}
+
+.phone-visible {
+  display: none;
+  @media #{$phone}{
+    display: block;
+  }
+}
+
+.custom-radio {
+  input {
+    display: none;
+  }
+  span {
+    @extend %inline-block;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+  }
+  input:checked + span {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      right: 3px;
+      left: 3px;
+      bottom: 3px;
+      border-radius: 50%;
+      background: $bg-color;
+    }
+  }
+}
+
